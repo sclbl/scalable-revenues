@@ -1,0 +1,36 @@
+body {
+  margin-top: 20px;
+}
+
+.no-button {
+  border: 0;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.fa-lg {
+  vertical-align: 0;
+}
+
+input[type=date]{
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+hr.low-margin {
+  margin: 20px 0;
+}
+
+form{
+  margin-bottom: 0;
+}
+
+table td:last-child, table th:last-child{
+  text-align: right;
+}

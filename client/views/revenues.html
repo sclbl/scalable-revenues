@@ -1,0 +1,48 @@
+<template name="revenues">
+  <div class="row">
+    <div class="ten columns">
+      <progress style="width: {{progressWidth}}%;"></progress>
+    </div>
+    <div class="two columns">
+      {{revenueSum}} € / 10.000 €
+    </div>
+  </div>
+  <hr class="low-margin" />
+  <div class="row">
+    <div class="six columns">
+      Month: <strong>{{currentMonth}}</strong>
+    </div>
+    <div class="six columns">
+      Sum: <strong>{{revenueSum}} €</strong>
+    </div>
+  </div>
+  <hr class="low-margin" />
+  <div class="row">
+    <div class="twelve columns">
+      {{#if revenues.count}}
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each revenues}}
+              <tr>
+                <td>{{formattedDate date}}</td>
+                <td>{{amount}} €</td>
+                <td><button class="no-button" data-action="remove"><i class="fa fa-trash-o fa-lg"></i></button></td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      {{else}}
+        <div class="text-center">
+          No revenues available...
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</template>
