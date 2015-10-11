@@ -22,3 +22,4 @@ skeleton:skeleton
 momentjs:moment
 fortawesome:fontawesome
 peppelg:mongo-sum
+sclbl:module-base
